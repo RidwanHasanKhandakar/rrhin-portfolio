@@ -6,6 +6,16 @@
 
     <title>Rahin Portfolio</title>
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -55,35 +65,288 @@
 
     <section id="about" class="section">
 
-        <h2>About</h2>
+    <h2>About</h2>
 
-        <p>
-            I enjoy building interactive software,
-            multiplayer systems, visual experiments,
-            and modern web experiences.
-        </p>
+    <div class="about-container">
 
-    </section>
+        <div class="about-text">
 
-    <section id="skills" class="section">
+            <p>
+                A 3rd-year CS student who sees programming
+                as both creativity and problem solving.
 
-        <h2>Skills</h2>
+                I enjoy building things that combine logic,
+                visuals, and experimentation — from JavaFX
+                applications to mathematical visualizations
+                and scientific problem solving using Python
+                and Java.
+            </p>
 
-        <div class="skills-grid">
+            <br>
 
-            <div class="card">Python</div>
-            <div class="card">JavaScript</div>
-            <div class="card">HTML</div>
-            <div class="card">CSS</div>
-            <div class="card">C</div>
-            <div class="card">C++</div>
-            <div class="card">Git</div>
-            <div class="card">MySQL</div>
+            <p>
+                I also enjoy competitive-style problem solving
+                with C and C++, exploring algorithms, and
+                transforming abstract concepts into interactive
+                visual experiences through code.
+
+                Whether it's a visualization project,
+                a multiplayer system, or a game built with
+                Pygame, I enjoy creating software that feels
+                dynamic, meaningful, and alive.
+            </p>
 
         </div>
 
-    </section>
+        <div class="about-stats">
 
+            <div class="stat-card">
+                <h3>7+</h3>
+                <p>Years of Coding</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>20+</h3>
+                <p>Projects Built</p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+    <section id="skills" class="section">
+
+    <h2>Skills</h2>
+
+    <div class="skills-tabs">
+
+        <button class="tab-btn active"
+        onclick="showTab('programming')">
+            Programming
+        </button>
+
+        <button class="tab-btn"
+        onclick="showTab('tools')">
+            Tools
+        </button>
+
+        <button class="tab-btn"
+        onclick="showTab('core')">
+            Core Ideas
+        </button>
+
+    </div>
+
+    <!-- Programming -->
+    <div class="tab-content active-tab"
+    id="programming">
+
+        <div class="skills-box">
+
+            <div class="skill">
+
+                <div class="skill-info">
+                    <span>C / C++</span>
+                    <span>90%</span>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress c"></div>
+                </div>
+
+            </div>
+
+            <div class="skill">
+
+                <div class="skill-info">
+                    <span>Python</span>
+                    <span>88%</span>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress python"></div>
+                </div>
+
+            </div>
+
+            <div class="skill">
+
+                <div class="skill-info">
+                    <span>JavaFX</span>
+                    <span>82%</span>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress javafx"></div>
+                </div>
+
+            </div>
+
+            <div class="skill">
+
+                <div class="skill-info">
+                    <span>Java</span>
+                    <span>84%</span>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress java"></div>
+                </div>
+
+            </div>
+
+            <div class="skill">
+
+                <div class="skill-info">
+                    <span>JavaScript</span>
+                    <span>75%</span>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress js"></div>
+                </div>
+
+            </div>
+
+            <div class="skill">
+
+                <div class="skill-info">
+                    <span>MySQL</span>
+                    <span>72%</span>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress mysql"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Tools -->
+    <div class="tab-content" id="tools">
+
+    <div class="skills-box">
+
+        <div class="skill">
+            <div class="skill-info">
+                <span>VS Code</span>
+                <span>95%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress vscode"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span>IntelliJ IDEA</span>
+                <span>85%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress intellij"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span>Git</span>
+                <span>80%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress git"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span>Java Processing</span>
+                <span>75%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress processing"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span>Pygame</span>
+                <span>78%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress pygame"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span>MATLAB</span>
+                <span>70%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress matlab"></div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+    <!-- Core -->
+    <div class="tab-content" id="core">
+
+    <div class="skills-box">
+
+        <div class="skill">
+            <div class="skill-info">
+                <span>Algorithms</span>
+                <span>88%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress algo"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span>Data Structures</span>
+                <span>85%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress ds"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span>Object-Oriented Programming</span>
+                <span>90%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress oop"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span>Database Management</span>
+                <span>80%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress db"></div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</section>
     <section id="projects" class="section">
 
         <h2>Projects</h2>
@@ -117,15 +380,80 @@
 
     </section>
 
-    <section id="contact" class="section">
+   <section id="contact" class="section">
 
-        <h2>Contact</h2>
+    <h2>Contact</h2>
 
-        <p>Email: yourmail@gmail.com</p>
+    <div class="contact-container">
 
-        <p>GitHub: github.com/yourusername</p>
+        <div class="contact-header">
 
-    </section>
+            <h3>Let’s Build Something Together</h3>
+
+            <p>
+                Whether you have a project in mind, want to collaborate,
+                or just want to say hi — I’m always open to new conversations
+                and opportunities.
+            </p>
+
+        </div>
+
+        <div class="contact-box">
+
+            <h4>Say Hello</h4>
+
+            <div class="contact-item">
+
+                <span>Email</span>
+
+                <a href="mailto:ridwan_rahin@proton.me">
+                        ridwan_rahin@proton.me
+                </a>
+
+            </div>
+
+            <div class="contact-item">
+
+                <span>LinkedIn</span>
+
+                <a href="https://linkedin.com" target="_blank">
+                    /your-linkedin
+                </a>
+
+            </div>
+
+            <div class="contact-item">
+
+                <span>GitHub</span>
+
+                <a href="https://github.com/yourusername" target="_blank">
+                    @yourusername
+                </a>
+
+            </div>
+
+            <div class="contact-item">
+
+                <span>Instagram</span>
+
+                <a href="https://instagram.com" target="_blank">
+                    @yourinstagram
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<footer class="footer">
+
+    <p>
+        © 2026 Rahin. Built with HTML, CSS & JavaScript.
+    </p>
+
+</footer>
 
     <script src="script.js"></script>
 
