@@ -1,3 +1,14 @@
+:root{
+    --bg:#05010a;
+
+    --purple:#a855f7;
+
+    --cyan:#33ccff;
+
+    --text:#e5e5e5;
+
+    --muted:#9ca3af;
+}
 *{
     margin:0;
     padding:0;
@@ -9,10 +20,15 @@ html{
 }
 
 body{
-    background:#070b14;
+    background:#05010a;
+
     color:white;
+
     font-family:'Inter', sans-serif;
+
     line-height:1.6;
+
+    overflow-x:hidden;
 }
 
 .navbar{
@@ -457,4 +473,134 @@ body{
 
 .footer p:hover{
     color:#64ffda;
+}
+h1, h2, h3{
+    text-shadow:0 0 10px rgba(168,85,247,0.3);
+}
+
+.section h2{
+    color:var(--cyan);
+    text-shadow:0 0 12px rgba(51,204,255,0.4);
+}
+.navbar{
+    position:fixed;
+
+    top:0;
+    width:100%;
+
+    padding:20px 8%;
+
+    display:flex;
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:rgba(5,1,10,0.6);
+
+    backdrop-filter:blur(12px);
+
+    border-bottom:1px solid rgba(51,204,255,0.1);
+
+    z-index:1000;
+}
+
+.logo{
+    color:var(--cyan);
+
+    font-weight:bold;
+
+    text-shadow:0 0 10px rgba(51,204,255,0.6);
+}
+
+.nav-links a{
+    color:white;
+
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:var(--cyan);
+
+    text-shadow:0 0 10px var(--cyan);
+}
+.hero h1{
+    font-size:80px;
+
+    color:white;
+
+    text-shadow:
+        0 0 10px rgba(168,85,247,0.4),
+        0 0 20px rgba(51,204,255,0.2);
+}
+
+.hero p{
+    color:var(--muted);
+}
+
+.btn{
+    background:linear-gradient(
+        90deg,
+        var(--purple),
+        var(--cyan)
+    );
+
+    color:black;
+
+    font-weight:bold;
+
+    box-shadow:0 0 15px rgba(51,204,255,0.3);
+}
+
+.btn:hover{
+    box-shadow:0 0 25px rgba(51,204,255,0.6);
+}
+.card,
+.project-card,
+.skill,
+.stat-card,
+.contact-box{
+    background:rgba(255,255,255,0.03);
+
+    border:1px solid rgba(51,204,255,0.1);
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:0 0 20px rgba(168,85,247,0.1);
+
+    transition:0.3s;
+}
+
+.card:hover,
+.project-card:hover{
+    transform:translateY(-8px);
+
+    border-color:var(--cyan);
+
+    box-shadow:0 0 25px rgba(51,204,255,0.3);
+}
+.progress-bar{
+    background:rgba(255,255,255,0.05);
+
+    border:1px solid rgba(51,204,255,0.1);
+}
+
+.progress{
+    background:linear-gradient(
+        90deg,
+        var(--purple),
+        var(--cyan)
+    );
+
+    box-shadow:0 0 10px rgba(51,204,255,0.4);
+}
+.footer{
+    padding:40px 10%;
+
+    text-align:center;
+
+    color:var(--muted);
+
+    border-top:1px solid rgba(51,204,255,0.1);
+
+    margin-top:80px;
 }
